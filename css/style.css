@@ -15,8 +15,34 @@ body {
 
 .bigicon {font-size: 3em;}
 h2{font-size: 42px;}
+h2.texto1{
+    font-family:"Montserrat";
+    color: rgb(0, 0, 0);
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;;
+  }
 h3{font-size: 28px;}
 h4{font-size: 18px; line-height: 1.4em;}
+h4.texto2{
+    font-family:"Montserrat";
+    color: rgb(0, 0, 0);
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;;
+}
 p{
     letter-spacing: 1px;
     color: #666;
@@ -28,7 +54,8 @@ p{
 DEFAULT STYLE & FORMATING
 ================================*/
 ul{padding: 0;}
-a{color: #ea9312}
+a{color: #ffffff}
+
 a:hover{color: #c3c3c3; text-decoration: none;}
 img{max-width: 100%;}
 
@@ -72,9 +99,9 @@ hr.separetor{
 HERO AREA
 ================================*/
 #hero{
-    color: #'0000';
+    color: #'ffff';
     text-align: center;
-    background: url(../img/background.gif)no-repeat; /*your background image*/
+    background: url(../img/background2.gif)no-repeat; /*your background image*/
     background-size: cover;
     max-height: 880px;
     overflow: hidden;

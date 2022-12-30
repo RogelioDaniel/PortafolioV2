@@ -1,30 +1,73 @@
-@charset "utf-8";
- body {
-    overflow: hidden;
-    margin: auto;
-}
-
-/* Preloader */
 #preloader {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #363942; /* preloader background color */
-    z-index: 99; /* makes sure it stays on top */
-}
-
-#status {
-    color: #fff;
-    font-size: 6em;
-    text-align: center;
+    z-index: 999999;
+    background: black;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    
+  }
+  #loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #2c12a1;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  #loader:before {
+    content: "";
     position: absolute;
-    width: 200px;
-    height: 200px;
-    left: 50%; /* centers the loading animation horizontally one the screen */
-    top: 55%; /* centers the loading animation vertically one the screen */
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: -100px 0 0 -100px; /* is width and height divided by two */
-}
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #0a0ade;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+  }
+  #loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f0ebeb;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+  }
+  @-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+  }
