@@ -69,13 +69,38 @@
 
 /* Smaller Mobile Devices */
 @media only screen and (max-width : 480px) {
-    #hero{margin-top: 80px; max-height: 100%; max-width: 100%;}    
+    #hero{ max-height: 100%; max-width: 100%;}    
     #clients {display: none;}
     .footersocial li{font-size: 1.5em}
     .heroshot{
-        margin-top: 50px;
+        margin-top: 500px;
         max-width: 50%;
         max-height: 50%;
+    }
+    .herocontent{
+        padding-top: 120px;
+
+    }
+    .enlace1{font-size: .8em;}
+    h2.texto1{
+        text-align: center;
+        font-size: 1.5em;
+        color: #fff;
+        letter-spacing: 0px;
+        font-weight: 700;
+        text-transform: uppercase;
+     
+        text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+    }
+    h4.texto2{
+        text-align: center;
+        font-size: 0.7em;
+        color: #fff;
+        letter-spacing: 0px;
+        font-weight: 700;
+        text-transform: uppercase;
+        animation: blur 20.0s ease-out;
+        text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
     }
 }
 
