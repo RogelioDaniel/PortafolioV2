@@ -124,18 +124,18 @@ HERO AREA
 	width: 100%;
 	background-color: hsla(200,40%,30%,.4);
 	background-image:		
-		url('https://www.pngkey.com/png/full/844-8445391_skyline-clipart-silhouette-city-skyline-silhouette-png.png'), 
+		url('../img/building.png'), 
 		
-		url('https://www.pngall.com/wp-content/uploads/11/City-PNG-Image-File.png'),
-        url('https://www.transparentpng.com/thumb/mountain/nLQFok-mountain-free-download-transparent.png'),
-		url('https://www.freepnglogos.com/uploads/cloud-png/white-big-cloud-png-27.png'),
-		url('https://images.all-free-download.com/images/graphiclarge/starry_night_192398.jpg');
+		url('../img/City.png'),
+    /*     url('https://www.transparentpng.com/thumb/mountain/nLQFok-mountain-free-download-transparent.png'), */
+		url('../img/cloud.png'),
+		url('../img/night.jpg');
 	background-repeat: repeat-x;
 	background-position: 
-		0 -50%,
+		0 -100%,
 		0 100%,
 		0 50%,
-		0 100%,
+	/* 	0 100%, */
 		0 0;
 /* 	background-size: 
 		500px,
@@ -145,11 +145,11 @@ HERO AREA
 		200px 260px; */
 	animation: 300s para infinite linear;
     background-size: cover;
-    max-height: 1980px;
+    max-height: 980px;
     overflow: hidden;
 }
 @keyframes para {
-	100% {
+	70% {
 		background-position: 
 			-5000px 20%,
 			-800px 95%,
