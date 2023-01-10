@@ -126,10 +126,10 @@ HERO AREA
 	background-image:		
 		url('../img/building.png'), 
 		
-		url('../img/City.png'),
+		url('../img/city.gif')
     /*     url('https://www.transparentpng.com/thumb/mountain/nLQFok-mountain-free-download-transparent.png'), */
-		url('../img/cloud.png'),
-		url('../img/background3.gif');
+	/* 	url('../img/cloud.png'), */
+		/* url('../img/background4.gif') */;
 	background-repeat: repeat-x;
 	background-position: 
 		0 -100%,
