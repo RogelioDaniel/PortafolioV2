@@ -105,9 +105,22 @@
     .sphere-animation {
         position: absolute;
         left: -20%;
-  
-
-        
+         
+    }
+    #drag-container img, #drag-container video {
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 80%;
+        height:80%;
+        line-height: 200px;
+        font-size: 500px;
+        text-align: center;
+        -webkit-box-shadow: 0 0 8px #fff;
+                box-shadow: 0 0 8px #fff;
+        -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
       }
 }
 
