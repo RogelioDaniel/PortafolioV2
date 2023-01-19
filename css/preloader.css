@@ -17,9 +17,9 @@
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #2c12a1;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+  border-top-color: #9370DB;
+  -webkit-animation: spin1 2s linear infinite;
+  animation: spin1 2s linear infinite;
 }
 #loader:before {
   content: "";
@@ -30,9 +30,9 @@
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #0a0ade;
-  -webkit-animation: spin 3s linear infinite;
-  animation: spin 3s linear infinite;
+  border-top-color: #BA55D3;
+  -webkit-animation: spin1 3s linear infinite;
+  animation: spin1 3s linear infinite;
 }
 #loader:after {
   content: "";
@@ -43,11 +43,11 @@
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #f0ebeb;
-  -webkit-animation: spin 1.5s linear infinite;
-  animation: spin 1.5s linear infinite;
+  border-top-color: #FF00FF;
+  -webkit-animation: spin1 1.5s linear infinite;
+  animation: spin1 1.5s linear infinite;
 }
-@-webkit-keyframes spin {
+@-webkit-keyframes spin1 {
   0%   {
       -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
@@ -59,7 +59,7 @@
       transform: rotate(360deg);
   }
 }
-@keyframes spin {
+@keyframes spin1 {
   0%   {
       -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
