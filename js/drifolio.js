@@ -9,13 +9,13 @@ $(window).on("load",function(){
 //========================
 //CUSTOM SCROLLBAR
 //========================
-$("html").niceScroll({
+/* $("html").niceScroll({
     mousescrollstep: 70,
     cursorcolor: "#ea9312",
     cursorwidth: "5px",
     cursorborderradius: "10px",
     cursorborder: "none",
-});
+}); */
 
 
 //========================
@@ -25,7 +25,7 @@ $(function () {
     $('a[href*=#]:not([href=#])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            target = target.length ? target : $('[name=' + this.hash.slice(2) + ']');
             if (target.length) {
                 $('html,body').animate({
                     scrollTop: target.offset().top
