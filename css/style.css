@@ -5,6 +5,41 @@
     list-style: none;
 }
 
+body.dark-theme {
+  --first-color-second: hsl(var(--hue-color), 54%, 12%);
+  --title-color: hsl(var(--hue-color), 24%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 4%, 15%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  color: var(--text-color);
+}
+/*================================
+DARK MODE
+================================*/
+.nav__dark {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  position: absolute;
+  left: 3rem;
+  bottom: 4rem;
+}
+
+.change-theme, .change-theme-name {
+  color: var(--text-color);
+}
+
+.change-theme {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.change-theme-name {
+  font-size: var(--small-font-size);
+}
+
 /*================================
 TYPOGRAPHY
 ================================*/
@@ -110,9 +145,9 @@ HERO AREA
 	width: 100%;
 	background-color: hsla(200,40%,30%,.4);
 	background-image:		
-		url('https://portafoliov2.b-cdn.net/building.png'), 
+		url('https://lh5.googleusercontent.com/EbY7ymQ4sR95suz9a08xDDQG4g0bVdGBRAPzVHMN6SbDy0OGowve1KwsGZ_B91gMd-0=w2400'), 
 		
-		url('https://portafoliov2.b-cdn.net/city.gif')
+		url('https://lh5.googleusercontent.com/nrkRWT0Odiqt_4_QJW5PHAXzao8aWzOhADEMPJq0eB-gSEIneYV-sGt0Qlv0oBXjAn8=w2400')
     /*     url('https://www.transparentpng.com/thumb/mountain/nLQFok-mountain-free-download-transparent.png'), */
 	/* 	url('../img/cloud.png'), */
 		/* url('../img/background4.gif') */;
