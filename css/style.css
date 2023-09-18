@@ -793,7 +793,27 @@ FOLLOW BUTTON
     margin-left: -3px;
     border-right-color: white;
 }
+.hr{
+  border-top: 1px solid #444;
+}
 
+/*button Up*/
+.h-top-link, .h-top-link:hover {
+   display: none;
+   cursor: pointer;
+   width: 48px;
+   height: 48px;
+   text-align: center;
+   background: #ff3c41;
+   color: #fff;
+   position: fixed;
+   right: 30px;
+   bottom: 30px;
+}
+
+.h-top-link i {
+   margin-top: 16px;
+}
 
 @media (max-width: 767px){
     .shots img{margin-bottom: 15px; max-width: 90%}
@@ -825,3 +845,4 @@ FOLLOW BUTTON
     overflow: hidden;
     background: #111;
 }
+

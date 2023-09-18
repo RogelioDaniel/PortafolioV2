@@ -163,3 +163,19 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/////////////////////////////////////////////
+// button Up
+/////////////////////////////////////////////
+$(function () {  
+  $(window).scroll(function () {  
+  if ($(this).scrollTop() > 300) $('a#move_up').fadeIn(200);  
+  else $('a#move_up').fadeOut(400);  
+  });  
+  $('a#move_up').click(function () {  
+  $('body,html').animate({  
+  scrollTop: 0  
+  }, 800);  
+  return false;  
+  });  
+});  
