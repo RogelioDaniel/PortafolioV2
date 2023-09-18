@@ -1,73 +1,42 @@
-#preloader {
-  position: fixed;
-  z-index: 999999;
-  background: black;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  
+.loader-bg {
+    position: fixed;
+    z-index: 99999;
+    background-color: #171717;
+    width: 100%;
+    height: 100%;
 }
-#loader {
-  display: block;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #9370DB;
-  -webkit-animation: spin1 2s linear infinite;
-  animation: spin1 2s linear infinite;
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
-#loader:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #BA55D3;
-  -webkit-animation: spin1 3s linear infinite;
-  animation: spin1 3s linear infinite;
+
+#container {
+    width: 200px;
+    height: 200px;
 }
-#loader:after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #FF00FF;
-  -webkit-animation: spin1 1.5s linear infinite;
-  animation: spin1 1.5s linear infinite;
+
+@keyframes animation {
+    0% {
+        stroke-dasharray: 1,98;
+        stroke-dashoffset: -105;
+    }
+    50% {
+        stroke-dasharray: 80,10;
+        stroke-dashoffset: -160;
+    }
+    100% {
+        stroke-dasharray: 1,98;
+        stroke-dashoffset: -300;
+    }
 }
-@-webkit-keyframes spin1 {
-  0%   {
-      -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      transform: rotate(0deg);
-  }
-  100% {
-      -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-      transform: rotate(360deg);
-  }
-}
-@keyframes spin1 {
-  0%   {
-      -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      transform: rotate(0deg);
-  }
-  100% {
-      -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-      transform: rotate(360deg);
-  }
+
+#spinner {
+    transform-origin: center;
+    animation-name: animation;
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(1.0, 0.4, 0.4, 1.0);
+    animation-iteration-count: infinite;
 }

@@ -49,10 +49,61 @@
     h3{font-size: 1.5em;}
     h4{font-size: 1.1em;}
     
-    
+    #about {
+        text-align: center;
+        /* Otros estilos específicos para dispositivos móviles */
+    }
     .myphoto{text-align: center;}
 
-    
+    #all {
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: visible;
+        position: relative;
+    }
+
+    #allcontent {
+        width: 90%; /* Reduzco el ancho para dispositivos móviles */
+        max-width: 100%;
+        margin: 20px auto 0 auto;
+    }
+
+    .portfolio {
+        width: 100%; /* Establezco un ancho del 100% para que ocupe todo el ancho de la pantalla */
+        max-width: 100%;
+        position: relative;
+        right: auto;
+        top: auto;
+        cursor: pointer;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .opened {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .ombra {
+        display: none;
+    }
+
+    .txt {
+        margin-top: 10px;
+        padding-top: 10px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #navi {
+        bottom: -20px;
+        left: 0;
+        margin: 0;
+    }
+
+    .footer {
+        bottom: -20px;
+    }
     /*Hero area*/
     #hero{height: 400px; }    
     .herocontent{padding-top: 30px;}
