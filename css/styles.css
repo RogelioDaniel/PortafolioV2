@@ -144,12 +144,12 @@ video {
 #container {
   position: relative;
 }
-#container canvas, #overlay {
+#container , #overlay {
   position: absolute;
 }
 canvas {
   width: 100%;
-  height: auto;
+  height: 100%;;
   max-width: 100%;
   display: block;
   margin: 0 auto;
