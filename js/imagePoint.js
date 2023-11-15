@@ -235,6 +235,13 @@ const start = async () => {
   loop();
 };
 
-start();
-
-ctx.canvas.addEventListener('click', start);
+const delayedStart = () => {
+    setTimeout(() => {
+      start();
+    }, 2000); // Adjust the delay time (in milliseconds) as needed
+  };
+  
+  // Call the delayedStart function immediately after the page loads
+  document.addEventListener('DOMContentLoaded', delayedStart);
+  
+  ctx.canvas.addEventListener('click', start);
