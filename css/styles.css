@@ -148,14 +148,12 @@ video {
   position: absolute;
 }
 canvas {
-  width: 500px;
-  height: 500px;
- 
-  /* centrar vertical y horizontalmente */
-
-
-  left: -10%;
-  margin: -25px 0 0 -25px; /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  /* Add any additional styles for your canvas here */
 }
 a {
   color: #666;
