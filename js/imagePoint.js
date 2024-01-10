@@ -13,7 +13,7 @@ const PI2 = Math.PI * 2;
 
 const ctx = document.querySelector('#canvas').getContext('2d');
 class Poisson {
-  constructor(r, k = 30) {
+  constructor(r, k = 80) {
     this.r = r;
     this.k  = k;
     this.cellSize = Math.floor(this.r / Math.sqrt(2));
